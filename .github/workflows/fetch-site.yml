@@ -13,8 +13,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Download site from Google Drive and commit
         run: |
-          curl -sSL 'https://drive.usercontent.google.com/download?id=1uqMjk7JQdSM0NPY66RW1sAMLma2uwphm&export=download&confirm=t' -o new.html
-          echo '1be932a1c0477693c4f486b0f08cb2c378967d6b535fa1449837f866c8e8d45c  new.html' | sha256sum -c
+          curl -sSL 'https://drive.usercontent.google.com/download?id=1zkfgDHvHyqneFW0Is0PpwbPiy2vWMvzA&export=download&confirm=t' -o new.html
+          echo '1b45f54d1a8baab51664505567dd420e451a9a08f56697ec9123cfcf5d0082e4  new.html' | sha256sum -c
           mv new.html index.html
           touch .nojekyll
           git config user.name 'github-actions[bot]'
