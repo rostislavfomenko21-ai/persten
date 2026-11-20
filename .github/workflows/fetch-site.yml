@@ -1,6 +1,8 @@
 name: fetch-site
 on:
   push:
+    paths:
+      - '.github/workflows/fetch-site.yml'
   workflow_dispatch:
 permissions:
   contents: write
@@ -11,12 +13,13 @@ jobs:
       - uses: actions/checkout@v4
       - name: Download site from Google Drive and commit
         run: |
-          if [ -f index.html ]; then echo 'index.html already exists'; exit 0; fi
-          curl -sSL 'https://drive.usercontent.google.com/download?id=1AarsB0F_fxZNWRLqS3VETYyWGvFeC1xo&export=download&confirm=t' -o index.html
-          echo '5c9c58759b126d198b06e11e5e9e3de3380b29c15c6796f707c0c7a598ca34f4  index.html' | sha256sum -c
+          curl -sSL 'https://drive.usercontent.google.com/download?id=19pOe0QNWEX4RvZpFHHHUQETq_yUAOeUu&export=download&confirm=t' -o new.html
+          echo '431d8205b9b3a6f86caeaae2a7667e35e6d2fa7d9dfc25dbecddaa8e08e74c4f  new.html' | sha256sum -c
+          mv new.html index.html
           touch .nojekyll
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
           git add index.html .nojekyll
-          git commit -m 'Add exhibition site'
+          git diff --cached --quiet && exit 0
+          git commit -m 'Update exhibition site: author data, quotes, Telegram sources'
           git push
