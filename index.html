@@ -92,24 +92,23 @@ blockquote.voice{margin:28px 0 0;max-width:70ch;border-left:3px solid var(--gold
 blockquote.voice p{font-family:var(--display);font-style:italic;font-size:24px;line-height:1.35;margin:0 0 10px}
 blockquote.voice footer{padding:0;font-size:14px;color:var(--muted);display:flex;gap:10px;align-items:center;flex-wrap:wrap}
 footer{padding:36px 0 60px;color:var(--muted);font-size:14px}
+
+.aside{border-left:2px solid #3a4466;padding:4px 0 4px 16px;color:#c9cede;margin-top:18px}
+.label p.credit{font-size:13px;color:#555566;margin:10px 0 0;padding-top:8px;border-top:1px solid #ddd5c4}
+.facts{display:grid;gap:22px 32px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.facts h3{font-size:24px;margin-bottom:6px;color:var(--gold)}
+.facts p{margin:0}
 </style>
 </head>
 <body>
 
 <header class="hero">
   <div class="wrap">
-    <div class="kicker">Цифровая мини-выставка · Профессиональная традиция</div>
+    <div class="kicker">Цифровая мини-выставка</div>
     <h1>Перстень, по которому узнают своих</h1>
-    <p class="lead">Выставка о том, как выпускницам Пансиона воспитанниц Министерства обороны Российской Федерации вручают памятные перстни и почему эту традицию связывают с Царскосельским лицеем. В её основе — фотографии из личного архива выпускницы Пансиона и проверенные источники.</p>
-    <p style="margin:0 0 6px;color:#dfe2ec">Автор-составитель: <strong>Софья Попова</strong>, выпускница Пансиона 2026 года, студентка НИУ ВШЭ (ОП «Медиакоммуникации»).</p>
+    <p class="lead">Эта выставка посвящена одной из самых трогательных традиций Пансиона воспитанниц Министерства обороны Российской Федерации: в день выпуска каждая выпускница получает памятный перстень с гербом Пансиона. Я окончила Пансион в 2026 году и собрала здесь свои фотографии, воспоминания и всё, что удалось узнать о том, откуда эта традиция взялась.</p>
+    <p style="margin:0 0 6px;color:#dfe2ec">Автор-составитель — <strong>Софья Попова</strong>, выпускница Пансиона 2026 года, студентка НИУ ВШЭ (образовательная программа «Медиакоммуникации»).</p>
     <p class="epigraph">«Друзья мои, прекрасен наш союз!»<small>А. С. Пушкин, «19 октября», 1825 <a href="#r13">[13]</a></small></p>
-    <div class="legend" aria-label="Обозначения достоверности">
-      <span class="chip ok">Подтверждено источником</span>
-      <span class="chip mixed">Источники расходятся</span>
-      <span class="chip myth">Легенда / не подтверждено</span>
-      <span class="chip own">Наблюдение или интерпретация автора</span>
-      <span class="chip ai">Оформление с помощью ИИ</span>
-    </div>
   </div>
 </header>
 
@@ -120,7 +119,7 @@ footer{padding:36px 0 60px;color:var(--muted);font-size:14px}
     <li><a href="#persten">III. Перстень</a></li>
     <li><a href="#ceremonia">IV. Церемония</a></li>
     <li><a href="#bratstvo">V. Братство</a></li>
-    <li><a href="#fakty">VI. Проверка фактов</a></li>
+    <li><a href="#fakty">VI. Что подтвердилось</a></li>
     <li><a href="#istochniki">Источники</a></li>
   </ul>
 </nav>
@@ -131,25 +130,24 @@ footer{padding:36px 0 60px;color:var(--muted);font-size:14px}
   <div class="wrap">
     <div class="hall-head">
       <span class="hall-num">I</span>
-      <h2>Истоки: лицейское кольцо, 1817</h2>
+      <h2>Истоки: лицейское кольцо</h2>
       <p>Откуда взялась мысль, что выпускников одной школы может связывать кольцо</p>
     </div>
     <div class="split">
       <div class="prose">
-        <p><span class="chip ok">Подтверждено</span></p>
-        <p>Императорский Царскосельский лицей открылся 19 октября 1811 года во флигеле Екатерининского дворца. Первый выпуск состоялся в 1817 году; среди выпускников были А. С. Пушкин, А. М. Горчаков, А. А. Дельвиг, В. К. Кюхельбекер, И. И. Пущин<sup class="ref"><a href="#r6">[6]</a></sup>.</p>
-        <p>На прощание директор лицея Егор Антонович Энгельгардт подарил выпускникам чугунные кольца в виде сплетённых рук. Лицеисты первого выпуска стали называть себя «чугунниками» и решили встречаться каждый год в день основания лицея, 19 октября<sup class="ref"><a href="#r7">[7]</a></sup>. С 1949 года в здании лицея работает Мемориальный музей-лицей, где воссоздана обстановка времён первого выпуска<sup class="ref"><a href="#r8">[8]</a></sup>.</p>
-        <p>Именные перстни выпускникам вручали и в Пажеском корпусе. На эту традицию прямо ссылается Пансион, рассказывая о своих перстнях<sup class="ref"><a href="#r11">[11]</a></sup>.</p>
-        <div class="note"><span class="chip myth">Легенда</span> В популярных статьях пишут, что кольца отлили из осколков разбитого колокола лицейской церкви<sup class="ref"><a href="#r5">[5]</a>, <a href="#r7">[7]</a>, <a href="#r3">[3]</a></sup>. В найденных энциклопедических и музейных источниках этого нет, к тому же колокола обычно отливали из бронзы, а не из чугуна. Поэтому на выставке это показано как легенда.</div>
+        <p>Историю памятных колец в России обычно начинают с Царскосельского лицея. Он открылся 19 октября 1811 года во флигеле Екатерининского дворца, а в 1817 году состоялся его первый выпуск. Среди выпускников были Александр Пушкин, Александр Горчаков, Антон Дельвиг, Вильгельм Кюхельбекер и Иван Пущин<sup class="ref"><a href="#r6">[6]</a></sup>.</p>
+        <p>Прощаясь с ними, директор лицея Егор Антонович Энгельгардт подарил выпускникам чугунные кольца в виде сплетённых рук — знак дружбы, которая должна была пережить годы учёбы. Выпускники первого курса стали в шутку называть себя «чугунниками» и договорились собираться вместе каждый год 19 октября, в день основания лицея<sup class="ref"><a href="#r7">[7]</a></sup>. Сегодня в здании лицея работает Мемориальный музей-лицей, открытый в 1949 году<sup class="ref"><a href="#r8">[8]</a></sup>.</p>
+        <p>Похожий обычай существовал и в Пажеском корпусе, где выпускникам вручали именные перстни. На эту традицию ссылается и сам Пансион, когда рассказывает о своих перстнях<sup class="ref"><a href="#r11">[11]</a></sup>.</p>
+        <p class="aside">В популярных статьях можно встретить красивую подробность: будто бы лицейские кольца отлили из осколков разбитого колокола лицейской церкви<sup class="ref"><a href="#r3">[3]</a>, <a href="#r5">[5]</a>, <a href="#r7">[7]</a></sup>. Однако ни в энциклопедии, ни в материалах музея об этом ничего не сказано, да и колокола обычно отливали из бронзы, а не из чугуна. Поэтому эту историю стоит считать скорее легендой, чем фактом.</p>
       </div>
       <ol class="timeline" aria-label="Хронология">
-        <li><span class="y">1811</span>открытие Царскосельского лицея<sup class="ref"><a href="#r6">[6]</a></sup></li>
-        <li><span class="y">1817</span>первый выпуск, чугунные кольца<sup class="ref"><a href="#r7">[7]</a></sup></li>
-        <li><span class="y">1825</span>Пушкин пишет «19 октября» о лицейском союзе</li>
-        <li><span class="y">2008</span>открыт Пансион воспитанниц МО РФ<sup class="ref"><a href="#r2">[2]</a></sup></li>
-        <li><span class="y">2016</span>первое вручение перстней выпускницам<sup class="ref"><a href="#r15">[15]</a></sup></li>
-        <li><span class="y">2019</span>открыт филиал в Санкт-Петербурге<sup class="ref"><a href="#r16">[16]</a></sup></li>
-        <li><span class="y">2020</span>перстни вручают несмотря на ограничения массовых мероприятий<sup class="ref"><a href="#r11">[11]</a></sup></li>
+        <li><span class="y">1811</span>открывается Царскосельский лицей<sup class="ref"><a href="#r6">[6]</a></sup></li>
+        <li><span class="y">1817</span>первый выпуск и чугунные кольца<sup class="ref"><a href="#r7">[7]</a></sup></li>
+        <li><span class="y">1825</span>Пушкин пишет стихотворение «19 октября» о лицейском союзе</li>
+        <li><span class="y">2008</span>в Москве открывается Пансион воспитанниц<sup class="ref"><a href="#r2">[2]</a></sup></li>
+        <li><span class="y">2016</span>выпускницам впервые вручают перстни<sup class="ref"><a href="#r15">[15]</a></sup></li>
+        <li><span class="y">2019</span>открывается филиал в Санкт-Петербурге<sup class="ref"><a href="#r16">[16]</a></sup></li>
+        <li><span class="y">2026</span>перстни получает мой выпуск<sup class="ref"><a href="#r10">[10]</a></sup></li>
       </ol>
     </div>
   </div>
@@ -160,15 +158,13 @@ footer{padding:36px 0 60px;color:var(--muted);font-size:14px}
     <div class="hall-head">
       <span class="hall-num">II</span>
       <h2>Пансион и его герб</h2>
-      <p>Что изображено на перстне и откуда это изображение</p>
+      <p>Что изображено на перстне и что это означает</p>
     </div>
     <div class="split">
       <div class="prose">
-        <p><span class="chip ok">Подтверждено</span></p>
-        <p>Пансион воспитанниц Министерства обороны открылся в Москве 1 сентября 2008 года как учебное заведение для дочерей военнослужащих. Идея его создания принадлежала министру обороны<sup class="ref"><a href="#r2">[2]</a></sup>. В 2017 году в 5–11 классах училось более 700 воспитанниц<sup class="ref"><a href="#r4">[4]</a></sup>, а с 2019 года работает филиал в Санкт-Петербурге<sup class="ref"><a href="#r16">[16]</a></sup>.</p>
-        <p>На гербе Пансиона распускающаяся роза изображена на фоне раскрытой книги и восходящего солнца. Девиз Пансиона: «В знании — сила, в красоте — спасение, в служении — судьба»<sup class="ref"><a href="#r14">[14]</a></sup>.</p>
-        <div class="note"><span class="chip ok">Подтверждено</span> Сам Пансион объясняет символику так: роза — символ красоты, радости, мудрости и совершенства, а книга символизирует знания<sup class="ref"><a href="#r9">[9]</a></sup>. В газете «Культура» роза и книга названы символами юности и знания<sup class="ref"><a href="#r14">[14]</a></sup>.</div>
-        <div class="note"><span class="chip mixed">Источники расходятся</span> О первом наборе 2008 года «Российская газета» пишет «почти две сотни» школьниц 9–11 классов<sup class="ref"><a href="#r2">[2]</a></sup>, а «Газета.Ru» — 180 учениц 7–9 классов<sup class="ref"><a href="#r4">[4]</a></sup>. Точные данные нужно уточнять в архиве Пансиона.</div>
+        <p>Пансион воспитанниц Министерства обороны открылся в Москве 1 сентября 2008 года. Это было первое в стране учебное заведение для дочерей военнослужащих, и идея его создания принадлежала министру обороны<sup class="ref"><a href="#r2">[2]</a></sup>. В 2017 году в Пансионе училось уже больше 700 девочек с 5-го по 11-й класс<sup class="ref"><a href="#r4">[4]</a></sup>, а в 2019 году открылся филиал в Санкт-Петербурге<sup class="ref"><a href="#r16">[16]</a></sup>.</p>
+        <p>Символ Пансиона — распускающаяся роза на фоне раскрытой книги и восходящего солнца, а девиз звучит так: «В знании — сила, в красоте — спасение, в служении — судьба»<sup class="ref"><a href="#r14">[14]</a></sup>. Сам Пансион объясняет эту символику так: роза означает красоту, радость, мудрость и совершенство, а книга — знания<sup class="ref"><a href="#r9">[9]</a></sup>. Газета «Культура» видит в розе и книге символы юности и знания<sup class="ref"><a href="#r14">[14]</a></sup>: по сути, о том же, только другими словами.</p>
+        <p class="aside">Любопытно, что даже о первом наборе источники рассказывают по-разному. «Российская газета» в 2008 году писала почти о двух сотнях школьниц 9–11 классов<sup class="ref"><a href="#r2">[2]</a></sup>, а «Газета.Ru» девять лет спустя — о 180 ученицах 7–9 классов<sup class="ref"><a href="#r4">[4]</a></sup>. Точную цифру, наверное, можно найти только в архиве самого Пансиона.</p>
       </div>
       <figure class="exhibit">
         <img src="data:image/webp;base64,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" alt="Нагрудный знак выпускницы: красная эмаль, роза на раскрытой книге на фоне лучей, золотой венок" width="260" height="250">
@@ -176,8 +172,7 @@ footer{padding:36px 0 60px;color:var(--muted);font-size:14px}
           <div class="no">Экспонат 1</div>
           <h3>Нагрудный знак выпускницы</h3>
           <p>На знаке хорошо видна та же эмблема, что выгравирована на перстне: роза на раскрытой книге и лучи восходящего солнца в золотом венке.</p>
-          <dl><dt>Источник</dt><dd>фото автора, снято на телефон (фрагмент экспоната 2)</dd>
-          <dt>Обработка</dt><dd>кадрирование; ИИ не применялся</dd></dl>
+          <p class="credit">Фото Софьи Поповой, снято на телефон. Это фрагмент экспоната 2: снимок только кадрирован, нейросети к нему не применялись.</p>
         </figcaption>
       </figure>
     </div>
@@ -189,7 +184,7 @@ footer{padding:36px 0 60px;color:var(--muted);font-size:14px}
     <div class="hall-head">
       <span class="hall-num">III</span>
       <h2>Перстень</h2>
-      <p>Сам предмет: как он выглядит и что о нём известно</p>
+      <p>Как он выглядит и что о нём известно</p>
     </div>
     <div class="grid two">
       <figure class="exhibit">
@@ -197,8 +192,8 @@ footer{padding:36px 0 60px;color:var(--muted);font-size:14px}
         <figcaption class="label">
           <div class="no">Экспонат 2</div>
           <h3>Всё, что выпускница уносит из Пансиона</h3>
-          <p>Аттестат о среднем общем образовании, медаль с гербом Российской Федерации, памятный перстень в бархатном футляре и нагрудный знак. Перстень лежит рядом с документами об образовании, и по этому снимку видно, что он входит в один ряд с ними как знак окончания Пансиона.</p>
-          <dl><dt>Источник</dt><dd>фото автора, снято на телефон</dd><dt>Обработка</dt><dd>уменьшение размера; ИИ не применялся</dd></dl>
+          <p>На этом снимке рядом лежат аттестат о среднем общем образовании, медаль с гербом России, памятный перстень в бархатном футляре и нагрудный знак выпускницы. Перстень здесь стоит в одном ряду с документом об образовании: для нас он такой же знак того, что учёба окончена.</p>
+          <p class="credit">Фото Софьи Поповой, снято на телефон, без обработки нейросетями.</p>
         </figcaption>
       </figure>
       <figure class="exhibit">
@@ -206,21 +201,20 @@ footer{padding:36px 0 60px;color:var(--muted);font-size:14px}
         <figcaption class="label">
           <div class="no">Экспонат 3</div>
           <h3>Перед вручением</h3>
-          <p>Перстни в одинаковых красных футлярах ждут своих владелиц. Все перстни выпуска одинаковые: в 2016 году их описали как кольцо-печатку с гербом Пансиона, «роза, расположенная в центре распахнутой книги»<sup class="ref"><a href="#r15">[15]</a></sup>.</p>
-          <dl><dt>Источник</dt><dd>фото автора, снято на телефон</dd><dt>Обработка</dt><dd>уменьшение размера; ИИ не применялся</dd></dl>
+          <p>Одинаковые красные футляры ждут своих владелиц. Все перстни выпуска одинаковые: ещё в 2016 году их описывали как кольцо-печатку с гербом Пансиона, то есть с розой в центре раскрытой книги<sup class="ref"><a href="#r15">[15]</a></sup>.</p>
+          <p class="credit">Фото Софьи Поповой, снято на телефон, без обработки нейросетями.</p>
         </figcaption>
       </figure>
     </div>
     <div class="split" style="margin-top:28px">
       <div class="prose">
-        <p><span class="chip ok">Подтверждено</span> Традиция вручения памятных перстней появилась в 2016 году по инициативе министра обороны С. К. Шойгу<sup class="ref"><a href="#r11">[11]</a>, <a href="#r15">[15]</a>, <a href="#r14">[14]</a></sup>.</p>
-        <div class="note"><span class="chip mixed">Источники расходятся</span> «Известия» (2016) и газета «Культура» (2018) называют перстень серебряным<sup class="ref"><a href="#r15">[15]</a>, <a href="#r14">[14]</a></sup>, а сайт Пансиона (2020) — позолоченным<sup class="ref"><a href="#r11">[11]</a></sup>.</div>
-        <div class="note"><span class="chip own">Наблюдение автора</span> На фотографиях перстень двухцветный: основа светлого металла, а эмблема и боковой орнамент позолочены. Вероятно, это серебро с частичной позолотой, и тогда оба описания верны. Но это предположение: пробу и технологию можно уточнить только у Пансиона или изготовителя.</div>
+        <p>Традиция вручать перстни появилась в Пансионе в 2016 году по инициативе министра обороны С. К. Шойгу<sup class="ref"><a href="#r11">[11]</a>, <a href="#r14">[14]</a>, <a href="#r15">[15]</a></sup>. С тех пор её ни разу не прерывали, даже в 2020 году, когда массовые мероприятия были ограничены<sup class="ref"><a href="#r11">[11]</a></sup>.</p>
+        <p>А вот о том, из чего сделан перстень, источники говорят по-разному. «Известия», газета «Культура» и Telegram-канал Пансиона называют его серебряным<sup class="ref"><a href="#r9">[9]</a>, <a href="#r10">[10]</a>, <a href="#r14">[14]</a>, <a href="#r15">[15]</a></sup>, а сайт Пансиона в 2020 году назвал его позолоченным<sup class="ref"><a href="#r11">[11]</a></sup>. Если присмотреться к фотографиям, видно, что перстень двухцветный: основа светлая, а эмблема и боковой орнамент золотистые. Скорее всего, это серебро с частичной позолотой, и тогда правы все. Но это лишь моё предположение: точно ответить могут только в Пансионе или у мастера, который делает перстни.</p>
       </div>
       <div>
         <div class="loupe">
           <img src="data:image/webp;base64,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" alt="Крупный план перстня в футляре: светлая основа и позолоченный рельеф" width="200" height="160">
-          <div><strong>Под лупой.</strong> Фрагмент экспоната 3: видна светлая основа и позолоченный рельеф. Кадрирование, ИИ не применялся.</div>
+          <div><strong>Под лупой.</strong> Увеличенный фрагмент экспоната 3: хорошо видны светлая основа и позолоченный рельеф.</div>
         </div>
       </div>
     </div>
@@ -232,7 +226,7 @@ footer{padding:36px 0 60px;color:var(--muted);font-size:14px}
     <div class="hall-head">
       <span class="hall-num">IV</span>
       <h2>Церемония</h2>
-      <p>Перстень не покупают и не получают по почте: его вручают на сцене, лично</p>
+      <p>Перстень не покупают и не присылают по почте: его вручают лично, на сцене</p>
     </div>
     <div class="grid two">
       <figure class="exhibit">
@@ -240,8 +234,8 @@ footer{padding:36px 0 60px;color:var(--muted);font-size:14px}
         <figcaption class="label">
           <div class="no">Экспонат 4</div>
           <h3>Рукопожатие</h3>
-          <p>Выпускница получает перстень и поздравление. За ней ждёт своей очереди следующая, с красным футляром в руках. На заднем плане видна эмблема Пансиона с розой.</p>
-          <dl><dt>Источник</dt><dd>фото автора, снято на телефон</dd><dt>Обработка</dt><dd>ИИ не применялся</dd></dl>
+          <p>Выпускница получает перстень и поздравления, а за ней уже ждёт своей очереди следующая, с красным футляром в руках. На заднем плане видна эмблема Пансиона с розой.</p>
+          <p class="credit">Фото Софьи Поповой, снято на телефон, без обработки нейросетями.</p>
         </figcaption>
       </figure>
       <figure class="exhibit">
@@ -249,17 +243,18 @@ footer{padding:36px 0 60px;color:var(--muted);font-size:14px}
         <figcaption class="label">
           <div class="no">Экспонат 5</div>
           <h3>Первый взгляд на перстень</h3>
-          <p>Выпускница держит только что полученный футляр. Перстни вручают представители Министерства обороны: в 2016 году их вручала заместитель министра обороны Т. В. Шевцова<sup class="ref"><a href="#r15">[15]</a></sup>, в 2020 году — она же вместе с председателем попечительского совета Т. Г. Нестеренко<sup class="ref"><a href="#r11">[11]</a></sup>.</p>
-          <p><span class="chip own">Интерпретация автора</span> В опросе воспитанниц 2018 года самой любимой традицией назван выпуск на Соборной площади Кремля (76,5%), а перстень в списке традиций не упоминается<sup class="ref"><a href="#r1">[1]</a></sup>. Тогда традиции было всего два года. Сейчас, по опыту автора, без перстня выпуск уже трудно представить.</p>
-          <dl><dt>Источник</dt><dd>личный архив автора, снято на телефон (кадр видеозаписи)</dd><dt>Обработка</dt><dd>ИИ не применялся</dd></dl>
+          <p>Выпускница держит только что полученный футляр. Перстни вручают представители Министерства обороны: в 2016 году это была заместитель министра обороны Т. В. Шевцова<sup class="ref"><a href="#r15">[15]</a></sup>, в 2020 году она же вместе с председателем попечительского совета Т. Г. Нестеренко<sup class="ref"><a href="#r11">[11]</a></sup>, а на нашем выпуске в 2026 году перстни вручал генерал.</p>
+          <p class="credit">Кадр из видео, снятого Софьей Поповой на телефон, без обработки нейросетями.</p>
         </figcaption>
       </figure>
     </div>
     <blockquote class="voice">
       <p>«На церемонии я одновременно испытывала волнение и радость. Генерал с почётом вручил мне заветный перстень, сказав напутственные слова. После выпуска я часто ношу украшение, с теплом вспоминая о Пансионе».</p>
-      <footer><span class="chip own">Свидетельство автора</span> Софья Попова, выпуск 2026 года</footer>
+      <footer>Софья Попова, выпуск 2026 года</footer>
     </blockquote>
-    <div class="note"><span class="chip mixed">Источники расходятся</span> В 2016 и 2020 годах перстни вручала Т. В. Шевцова<sup class="ref"><a href="#r15">[15]</a>, <a href="#r11">[11]</a></sup>. В 2026 году, по свидетельству автора, перстень вручал генерал. Кто вручает перстни, меняется от выпуска к выпуску, а сама церемония остаётся.</div>
+    <div class="prose" style="margin-top:22px">
+      <p>Интересно, что в опросе воспитанниц 2018 года самой любимой традицией назвали выпуск на Соборной площади Кремля (так ответили 76,5% девочек), а перстень в списке традиций даже не упоминался<sup class="ref"><a href="#r1">[1]</a></sup>. Тогда этой традиции было всего два года. Сегодня, как мне кажется, выпуск без перстня уже трудно представить.</p>
+    </div>
   </div>
 </section>
 
@@ -276,9 +271,9 @@ footer{padding:36px 0 60px;color:var(--muted);font-size:14px}
         <figcaption class="label">
           <div class="no">Экспонат 6</div>
           <h3>Круг рук</h3>
-          <p>Выпускницы складывают руки в круг так, чтобы были видны одинаковые перстни. Кольца надеты на разные пальцы, но рисунок у всех один.</p>
-          <p><span class="chip own">Интерпретация автора</span> Лицейское кольцо 1817 года изображало сплетённые руки<sup class="ref"><a href="#r7">[7]</a></sup>. Через двести лет выпускницы сами сплетают руки, чтобы показать свои кольца. Никто из них, скорее всего, не думал о лицее, и от этого перекличка кажется ещё точнее.</p>
-          <dl><dt>Источник</dt><dd>фото автора, снято на телефон</dd><dt>Обработка</dt><dd>уменьшение размера; ИИ не применялся</dd></dl>
+          <p>После церемонии мы сложили руки в круг так, чтобы были видны одинаковые перстни. Кольца надеты на разные пальцы, но рисунок у всех один.</p>
+          <p>Только потом я узнала, что лицейское кольцо 1817 года изображало именно сплетённые руки<sup class="ref"><a href="#r7">[7]</a></sup>. Двести лет спустя мы, сами того не зная, повторили этот жест, и, по-моему, в этом совпадении и заключается смысл традиции.</p>
+          <p class="credit">Фото Софьи Поповой, снято на телефон, без обработки нейросетями.</p>
         </figcaption>
       </figure>
       <figure class="exhibit tall">
@@ -286,15 +281,17 @@ footer{padding:36px 0 60px;color:var(--muted);font-size:14px}
         <figcaption class="label">
           <div class="no">Экспонат 7</div>
           <h3>У входа в Пансион</h3>
-          <p>Две выпускницы в день выпуска показывают перстни на фоне здания с надписью «Московский кадетский корпус. Пансион воспитанниц МО РФ». Первый жест после церемонии — повернуть руку так, чтобы кольцо было видно.</p>
-          <p><span class="chip mixed">Частично подтверждено</span> Представитель Пансиона в 2016 году говорила, что по таким перстням выпускники одного учебного заведения «узнавали друг друга с полувзгляда»<sup class="ref"><a href="#r15">[15]</a></sup>. Это сказано об университетских перстнях XVIII века в целом. В 2026 году канал Пансиона написал, что по таким перстням узнавали друг друга лицеисты, включая Пушкина<sup class="ref"><a href="#r10">[10]</a></sup>, но исторических подтверждений этому найти не удалось. Узнают ли друг друга по перстням выпускницы Пансиона, покажет время.</p>
-          <dl><dt>Источник</dt><dd>фото автора, снято на телефон; люди на фото дали согласие на публикацию</dd><dt>Обработка</dt><dd>уменьшение размера; ИИ не применялся</dd></dl>
+          <p>В день выпуска две выпускницы показывают перстни на фоне здания с надписью «Московский кадетский корпус. Пансион воспитанниц МО РФ». Кажется, это первое, что хочется сделать сразу после церемонии: повернуть руку так, чтобы кольцо было видно всем.</p>
+          <p class="credit">Фото Софьи Поповой, снято на телефон, без обработки нейросетями. Девушки на снимке разрешили его опубликовать.</p>
         </figcaption>
       </figure>
     </div>
+    <div class="prose" style="margin-top:26px">
+      <p>Когда традицию возрождали в 2016 году, представитель Пансиона напомнила, что в XVIII веке выпускники университетов получали перстни и спустя годы узнавали по ним друг друга «с полувзгляда»<sup class="ref"><a href="#r15">[15]</a></sup>. А в 2026 году канал Пансиона написал, что так же узнавали друг друга лицеисты, в том числе Пушкин<sup class="ref"><a href="#r10">[10]</a></sup>. Звучит красиво, но исторических подтверждений этому мне найти не удалось. Будут ли выпускницы Пансиона узнавать друг друга по перстням, покажет время.</p>
+    </div>
     <blockquote class="voice">
       <p>«Для меня перстень — это не просто кольцо, а символ целой истории, которая длилась семь лет в стенах Пансиона, где мы учились всему новому, интересному и открывали двери в своё светлое будущее».</p>
-      <footer><span class="chip own">Свидетельство автора</span> Софья Попова, выпуск 2026 года</footer>
+      <footer>Софья Попова, выпуск 2026 года</footer>
     </blockquote>
   </div>
 </section>
@@ -303,26 +300,26 @@ footer{padding:36px 0 60px;color:var(--muted);font-size:14px}
   <div class="wrap">
     <div class="hall-head">
       <span class="hall-num">VI</span>
-      <h2>Проверка фактов</h2>
-      <p>Что говорят о традиции и насколько этому можно верить</p>
+      <h2>Что подтвердилось, а что нет</h2>
+      <p>Работая над выставкой, я сверяла каждое утверждение как минимум с двумя источниками</p>
     </div>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>Утверждение</th><th>Статус</th><th>Основание</th></tr></thead>
-        <tbody>
-          <tr><td>Традицию перстней в Пансионе ввели в 2016 году по инициативе министра обороны</td><td><span class="chip ok">Подтверждено</span></td><td>сайт Пансиона, «Известия», «Культура» [11, 15, 14]</td></tr>
-          <tr><td>На перстне — герб Пансиона: роза в центре раскрытой книги</td><td><span class="chip ok">Подтверждено</span></td><td>«Известия» [15]; видно на фото</td></tr>
-          <tr><td>Перстень серебряный</td><td><span class="chip mixed">Расходятся</span></td><td>серебряный [15, 14], позолоченный [11]; на фото двухцветный</td></tr>
-          <tr><td>Выпускникам лицея 1817 года подарили чугунные кольца в виде сплетённых рук</td><td><span class="chip ok">Подтверждено</span></td><td>Культура.РФ, «Газета.Ru» [7, 5]</td></tr>
-          <tr><td>Лицейские кольца были позолоченными</td><td><span class="chip myth">Ошибка</span></td><td>так в еженедельнике «Звезда» [12]; другие источники пишут о чугуне</td></tr>
-          <tr><td>Кольца отлиты из осколков лицейского колокола</td><td><span class="chip myth">Легенда</span></td><td>только популярные статьи [5, 7, 3]</td></tr>
-          <tr><td>Однокурсники-лицеисты, включая Пушкина, узнавали друг друга по таким перстням</td><td><span class="chip myth">Не подтверждено</span></td><td>так пишет канал Пансиона в 2026 году [10]; в исторических источниках подтверждения не найдено</td></tr>
-          <tr><td>Роза на гербе — символ красоты, радости, мудрости и совершенства, книга — знаний</td><td><span class="chip ok">Подтверждено</span></td><td>официальный канал Пансиона [9]</td></tr>
-          <tr><td>Пушкин носил лицейское кольцо всю жизнь</td><td><span class="chip myth">Не подтверждено</span></td><td>утверждение из ответа ИИ, подтверждения не найдено; на выставку не вошло</td></tr>
-          <tr><td>По перстням выпускники узнавали друг друга</td><td><span class="chip mixed">Частично</span></td><td>слова представителя Пансиона об университетских перстнях [15]</td></tr>
-          <tr><td>Выпускницы складывают руки в круг, чтобы показать перстни</td><td><span class="chip own">Свидетельство автора</span></td><td>фотография из личного архива (экспонат 6)</td></tr>
-        </tbody>
-      </table>
+    <div class="facts">
+      <div>
+        <h3>Подтвердилось</h3>
+        <p>Традиция перстней действительно появилась в 2016 году по инициативе министра обороны<sup class="ref"><a href="#r11">[11]</a>, <a href="#r14">[14]</a>, <a href="#r15">[15]</a></sup>. На перстне выгравирован герб Пансиона, роза на раскрытой книге<sup class="ref"><a href="#r15">[15]</a></sup>, и сам Пансион объясняет розу как символ красоты, радости, мудрости и совершенства, а книгу — как символ знаний<sup class="ref"><a href="#r9">[9]</a></sup>. Подтвердилось и то, что выпускники лицея в 1817 году получили чугунные кольца в виде сплетённых рук<sup class="ref"><a href="#r5">[5]</a>, <a href="#r7">[7]</a></sup>.</p>
+      </div>
+      <div>
+        <h3>Источники спорят</h3>
+        <p>Одни источники называют перстень серебряным, другие позолоченным<sup class="ref"><a href="#r9">[9]</a>, <a href="#r11">[11]</a>, <a href="#r15">[15]</a></sup>. Еженедельник «Звезда» и вовсе написал, что лицеисты носили позолоченные перстни<sup class="ref"><a href="#r12">[12]</a></sup>, хотя все остальные источники говорят о чугуне, так что это, скорее всего, ошибка.</p>
+      </div>
+      <div>
+        <h3>Оказалось легендой</h3>
+        <p>Историю о кольцах из осколков лицейского колокола повторяют только популярные статьи<sup class="ref"><a href="#r3">[3]</a>, <a href="#r5">[5]</a>, <a href="#r7">[7]</a></sup>. Не нашлось подтверждений и тому, что по перстням узнавали друг друга лицеисты вместе с Пушкиным<sup class="ref"><a href="#r10">[10]</a></sup>. А когда я сначала спросила нейросеть об истории традиции без поиска источников, она написала, что Пушкин носил лицейское кольцо всю жизнь. Этому подтверждения тоже не нашлось, поэтому на выставку эта фраза не попала.</p>
+      </div>
+      <div>
+        <h3>Знают только выпускницы</h3>
+        <p>Есть вещи, о которых не пишут ни газеты, ни официальные сайты: например, как мы складываем руки в круг, чтобы показать перстни (экспонат 6), или с каким чувством выходим со сцены с красным футляром в руках.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -332,12 +329,11 @@ footer{padding:36px 0 60px;color:var(--muted);font-size:14px}
     <div class="hall-head">
       <span class="hall-num">✦</span>
       <h2>Как сделана выставка</h2>
-      <p>Что здесь подлинное, а что создано с помощью ИИ</p>
+      <p>Что здесь подлинное, а в чём помогала нейросеть</p>
     </div>
     <div class="how">
-      <div><h3>Подлинное</h3><p>Все фотографии сняты автором, выпускницей Пансиона 2026 года, на телефон. Их только кадрировали и уменьшили, ИИ к ним не применялся: ничего не дорисовано, не отреставрировано и не раскрашено. Сгенерированных изображений на выставке нет.</p></div>
-      <div><h3>С помощью ИИ <span class="chip ai">ИИ</span></h3><p>Нейросеть Claude (Anthropic) помогла найти источники, предложила структуру залов, подготовила черновики текстов этикеток и свёрстала эту страницу. Автор проверил каждый факт по источникам и исправил ошибки ИИ (см. зал VI).</p></div>
-      <div><h3>Этика</h3><p>Люди на фотографиях дали согласие на публикацию. Должностные лица на фото церемонии по именам не названы, потому что их нельзя установить по проверяемым источникам. Сведения о других людях из открытых источников взяты только в том объёме, в каком они опубликованы.</p></div>
+      <div><h3>Фотографии</h3><p>Все фотографии на выставке настоящие: я сняла их на телефон в день выпуска. Снимки только кадрировали и уменьшили, нейросети к ним не применялись, поэтому здесь ничего не дорисовано, не раскрашено и не сгенерировано. Девушки на снимках разрешили их опубликовать, а должностных лиц на фотографиях церемонии я по именам не называю.</p></div>
+      <div><h3>Тексты и оформление</h3><p>С остальным мне помогала нейросеть Claude (компания Anthropic): она искала источники, предложила разделить выставку на залы, подготовила черновики текстов и сверстала эту страницу. Каждый факт я проверила по источникам сама и исправила то, в чём нейросеть ошиблась.</p></div>
     </div>
   </div>
 </section>
@@ -347,7 +343,7 @@ footer{padding:36px 0 60px;color:var(--muted);font-size:14px}
     <div class="hall-head">
       <span class="hall-num">§</span>
       <h2>Источники</h2>
-      <p>Оформлены по стандарту APA (7-е изд.)</p>
+      <p>Оформлены по стандарту APA (7-е издание)</p>
     </div>
     <ol class="refs">
       <li id="r1">Афонина, В. Е. (2018). <i>Профессиональные традиции выпускниц Пансиона воспитанниц Министерства обороны Российской Федерации</i> [Тезисы доклада]. Международный молодёжный научный форум «Ломоносов-2018», МГУ имени М. В. Ломоносова. <span class="url">https://conf.msu.ru/archive/Lomonosov_2018/data/12848/74361_uid143284_report.pdf</span></li>
@@ -371,11 +367,5 @@ footer{padding:36px 0 60px;color:var(--muted);font-size:14px}
 </section>
 
 </main>
-
-<footer>
-  <div class="wrap">
-    Автор-составитель: Софья Попова (НИУ ВШЭ, ОП «Медиакоммуникации», группа БМД265). Цифровая мини-выставка подготовлена в рамках задания «Настоящее рядом» (Трек 2: ИИ использован частично). Фотографии сняты автором на телефон и публикуются с согласия изображённых. Оформление страницы выполнено с помощью ИИ (Claude, Anthropic) и проверено автором. Сайт размещён на GitHub Pages.
-  </div>
-</footer>
 </body>
 </html>
