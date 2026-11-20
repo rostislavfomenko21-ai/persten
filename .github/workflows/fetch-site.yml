@@ -1,0 +1,22 @@
+name: fetch-site
+on:
+  push:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download site from Google Drive and commit
+        run: |
+          if [ -f index.html ]; then echo 'index.html already exists'; exit 0; fi
+          curl -sSL 'https://drive.usercontent.google.com/download?id=1AarsB0F_fxZNWRLqS3VETYyWGvFeC1xo&export=download&confirm=t' -o index.html
+          echo '5c9c58759b126d198b06e11e5e9e3de3380b29c15c6796f707c0c7a598ca34f4  index.html' | sha256sum -c
+          touch .nojekyll
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add index.html .nojekyll
+          git commit -m 'Add exhibition site'
+          git push
